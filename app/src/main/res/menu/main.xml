@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/prev_item"
+        android:title="上一关"
+        app:showAsAction="always"
+        android:icon="@drawable/back"/>
+    <item
+        android:id="@+id/next_item"
+        android:title="下一关"
+        app:showAsAction="always"
+        android:icon="@drawable/forward"/>
+    <item
+        android:id="@+id/reset_item"
+        app:showAsAction="always"
+        android:title="重来"
+        android:icon="@drawable/refresh"/>
+    <item
+        android:id="@+id/about_item"
+        android:title="关于"
+        android:icon="@drawable/about"/>
+
+</menu>

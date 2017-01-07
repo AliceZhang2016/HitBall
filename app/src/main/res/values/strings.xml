@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">推箱子</string>
+    <!-- 菜单
+    <string name="menu_reset">重来</string>
+    <string name="menu_prev">上一关</string>
+    <string name="menu_next">下一关</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_cancle">取消</string>
+    <string name="menu_ok">确认</string> -->
+    <!-- 信息提示的TextView的原始内容 -->
+    <string name="tv_step">步数: </string>
+    <string name="tv_time">时间: </string>
+    <string name="tv_score">分数:  </string>
+    <string name="tv_level">关卡: </string>
+    <string name="tv_position">坐标:  </string>
+    <string name="tv_target">目标: </string>
+</resources>
