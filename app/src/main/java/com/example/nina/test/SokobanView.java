@@ -1,6 +1,7 @@
-package com.phpec.sokoban;
+package com.example.nina.test;;
+
 /**
- * 自定义推箱子游戏的舞台VIEW
+ * Created by Mengxue on 17/1/7.
  */
 
 
@@ -10,6 +11,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 
+import android.content.res.Resources;
 import android.gesture.GestureOverlayView;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -85,23 +87,21 @@ public class SokobanView extends View{
 		setFocusable(true); //允许获得焦点，如果没有这句，按键不起作用
 		setFocusableInTouchMode(true); //获取焦点时允许触控
 		//准备绘图用的Bitmap对象
-		bitmap[BackStage.P1U] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.hero_1_f));
-		bitmap[BackStage.P1D] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.hero_1_b));
-		bitmap[BackStage.P1L] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.hero_1_l));
-		bitmap[BackStage.P1R] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.hero_1_r));
-
-		bitmap[BackStage.P2U] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.hero_4_f));
-		bitmap[BackStage.P2D] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.hero_4_b));
-		bitmap[BackStage.P2L] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.hero_4_l));
-		bitmap[BackStage.P2R] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.hero_4_r));
-
-		bitmap[BackStage.G] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.grass));
-		bitmap[BackStage.W] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.wall));
-		bitmap[BackStage.L] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.lake));
-		bitmap[BackStage.B] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.ball));
-		bitmap[BackStage.H] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.hole));
-		bitmap[BackStage.BH] = BitmapFactory.decodeStream(getResources().openRawResource(R.drawable.ball_in_hole));
-
+		Resources res=getResources();
+		bitmap[BackStage.P1U] = BitmapFactory.decodeResource(res,R.drawable.hero_1_b);
+		bitmap[BackStage.P1D] = BitmapFactory.decodeResource(res,R.drawable.hero_1_f);
+		bitmap[BackStage.P1L] = BitmapFactory.decodeResource(res,R.drawable.hero_1_l);
+		bitmap[BackStage.P1R] = BitmapFactory.decodeResource(res,R.drawable.hero_1_r);
+		bitmap[BackStage.P2U] = BitmapFactory.decodeResource(res,R.drawable.hero_2_b);
+		bitmap[BackStage.P2D] = BitmapFactory.decodeResource(res,R.drawable.hero_2_f);
+		bitmap[BackStage.P2L] = BitmapFactory.decodeResource(res,R.drawable.hero_2_l);
+		bitmap[BackStage.P2R] = BitmapFactory.decodeResource(res,R.drawable.hero_2_r);
+		bitmap[BackStage.G] = BitmapFactory.decodeResource(res,R.drawable.grass);
+		bitmap[BackStage.W] = BitmapFactory.decodeResource(res,R.drawable.wall);
+		bitmap[BackStage.L] = BitmapFactory.decodeResource(res,R.drawable.lake);
+		bitmap[BackStage.B] = BitmapFactory.decodeResource(res,R.drawable.ball);
+		bitmap[BackStage.H] = BitmapFactory.decodeResource(res,R.drawable.hole);
+		bitmap[BackStage.BH] = BitmapFactory.decodeResource(res,R.drawable.ball_in_hole);
 	}
 	public void stopHandler(){
 		mRedrawHandler.removeMessages(0);
@@ -128,11 +128,11 @@ public class SokobanView extends View{
 		//mXCount=15;
 		//mYCount=10;
 
-		int xSize = (int) Math.floor(this.w / mXCount); 	//X方向的每格大小
-		int ySize = (int) Math.floor(this.h / mYCount); 	//Y方向的每格大小
+		int xSize = (int) Math.floor(this.w / mYCount); 	//X方向的每格大小
+		int ySize = (int) Math.floor(this.h / mXCount); 	//Y方向的每格大小
 		mSize = xSize > ySize ? ySize:xSize;				//使用小的尺寸来画
-		mXOffset = ((this.w - (mSize * mXCount)) / 2);  	//X轴起点
-		mYOffset = hh + ((this.h - (mSize * mYCount)) / 2);	//Y轴起点
+		mXOffset = ((this.w - (mSize * mYCount)) / 2);  	//X轴起点
+		mYOffset = hh + ((this.h - (mSize * mXCount)) / 2);	//Y轴起点
 		//updateTips();
 		this.invalidate();
 	}
@@ -159,15 +159,19 @@ public class SokobanView extends View{
 		Log.d("ss", String.valueOf(keyCode));
 		int cleared = 0;
 		if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT) {
+			System.out.println("2");
 			cleared = backstage.Move(current_player,BackStage.LEFT);
 		}
 		else if (keyCode == KeyEvent.KEYCODE_DPAD_DOWN) {
+			System.out.println("1");
 			cleared = backstage.Move(current_player,BackStage.DOWN);
 		}
 		else if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
+			System.out.println("0");
 			cleared = backstage.Move(current_player,BackStage.UP);
 		}
 		else if (keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
+			System.out.println("3");
 			cleared = backstage.Move(current_player,BackStage.RIGHT);
 		}
 		else if(keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_HOME){ //返回键
@@ -179,6 +183,8 @@ public class SokobanView extends View{
 
 		if(cleared==1){
 			declareWin();
+		}else if (cleared==-1){
+			hit_wall();
 		}
 		current_player=4-current_player;
 		this.invalidate();
@@ -189,19 +195,30 @@ public class SokobanView extends View{
 
 	@Override
 	protected void onDraw(Canvas canvas) {
+		for(int i=0; i<backstage.m; i++)
+		{
+			for(int j=0; j<backstage.n; j++)
+			{
+				System.out.print(backstage.map[i][j]+" ");
+			}
+			System.out.print("\n");
+		}
+		System.out.print("\n\n");
 		//updateTips();
-		for(int i = 0;i < mYCount;i++){
-			for(int j= 0; j < mXCount;j++){
+		for(int i = 0;i < mXCount;i++){
+			for(int j= 0; j < mYCount;j++){
 				//int npcId = sokobanArtists.getArtistsByXY(i,j);
-				int npcId= backstage.map[j][i];
+				int npcId= backstage.map[i][j];
 
-				if (npcId == 0) continue;  //空白位置
+				//if (npcId == 0) continue;  //空白位置
 				Rect rt = new Rect();
-				int x = mXOffset + mSize * j; //
-				int y = mYOffset + mSize * i;
+				//int x = mXOffset + mSize * i; //
+				//int y = mYOffset + mSize * j;
+				int x=mXOffset+mSize*j;
+				int y=mYOffset+mSize*i;
 
 
-
+				//rt.set(x,y,x+mSize,y+mSize);
 				rt.set(x,y,x+mSize,y+mSize);
 				canvas.drawBitmap(bitmap[npcId], null, rt, null);
 			}
@@ -211,6 +228,33 @@ public class SokobanView extends View{
 
 
 	public boolean declareWin(){
+
+		//实时创建对话框并显示
+		new AlertDialog.Builder(context)
+				//.setIcon(R.drawable.alert_dialog_icon)
+				.setTitle(R.string.dia_tips)
+				.setMessage(R.string.dia_youwin)
+				.setPositiveButton(R.string.menu_ok,	new DialogInterface.OnClickListener()
+						{
+							@Override
+							public void onClick(DialogInterface dialog,int whichButton)
+							{/*
+								if(level < sokobanArtists.getTotalLevels()){
+									Log.d("ee",String.format("level=%1$d,total=%2$d", level,sokobanArtists.getTotalLevels()));
+									level++; //next
+									loadMap(level);
+								}
+								*/
+								loadMap();
+							}
+						}
+				)
+				.show();
+
+		return true;
+	}
+
+	public boolean hit_wall(){
 
 		//实时创建对话框并显示
 		new AlertDialog.Builder(context)

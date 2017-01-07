@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">推箱子</string>
-    <!-- 菜单
+    <!-- 菜单  -->
     <string name="menu_reset">重来</string>
     <string name="menu_prev">上一关</string>
     <string name="menu_next">下一关</string>
     <string name="menu_about">关于</string>
     <string name="menu_cancle">取消</string>
-    <string name="menu_ok">确认</string> -->
+    <string name="menu_ok">确认</string>
     <!-- 信息提示的TextView的原始内容 -->
     <string name="tv_step">步数: </string>
     <string name="tv_time">时间: </string>
@@ -14,4 +14,9 @@
     <string name="tv_level">关卡: </string>
     <string name="tv_position">坐标:  </string>
     <string name="tv_target">目标: </string>
+    <!-- 对话框提示 -->
+    <string name="dia_tips">提示</string>
+    <string name="dia_youwin">恭喜你过关了！继续下一关，加油！</string>
+    <string name="dia_about">游戏说明：\n\n点击屏幕四个方向或方向键移动机器人，把所有苹果推到垃圾箱里即可胜利。\n</string>
+    <string name="sure_tips">确实要退出吗？</string>
 </resources>
