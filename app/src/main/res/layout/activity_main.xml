@@ -11,58 +11,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nina.test.MainActivity">
 
+    <Button
+        android:text="开始"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/startButton"
+        android:layout_below="@+id/restart"
+        android:layout_alignLeft="@+id/restart"
+        android:layout_alignStart="@+id/restart"
+        style="@style/Widget.AppCompat.Button" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/enterpic"
-        android:layout_marginLeft="100dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginEnd="72dp"
-        android:id="@+id/imageView1"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/imageView2"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:layout_above="@+id/restart"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="250dp" />
+        android:layout_marginBottom="62dp" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <Button
+        android:text="重新开始"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:layout_marginBottom="43dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
+        android:id="@+id/restart"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
-        <Button
-            android:layout_width="151dp"
-            android:layout_height="64dp"
-            android:id="@+id/selectButton"
-            android:layout_alignParentTop="true"
-            android:layout_alignLeft="@+id/introductionButton"
-            android:layout_alignStart="@+id/introductionButton"
-            android:layout_marginTop="84dp"
-            android:background="@drawable/select2" />
+    <Button
+        android:text="游戏简介"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/introductionButton"
+        style="@style/Widget.AppCompat.Button"
+        android:elevation="0dp"
+        android:layout_below="@+id/startButton"
+        android:layout_toLeftOf="@+id/startButton"
+        android:layout_toStartOf="@+id/startButton" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/introductionButton"
-            android:elevation="0dp"
-            android:background="@drawable/introduction2"
-            android:layout_marginLeft="0dp"
-            android:layout_marginStart="0dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <Button
-            android:layout_width="155dp"
-            android:layout_height="64dp"
-            android:id="@+id/startButton"
-            android:background="@drawable/begin2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-    </LinearLayout>
-
+    <Button
+        android:text="人物选择"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/introductionButton"
+        android:layout_toRightOf="@+id/startButton"
+        android:layout_toEndOf="@+id/startButton"
+        android:id="@+id/selectButton" />
 </RelativeLayout>

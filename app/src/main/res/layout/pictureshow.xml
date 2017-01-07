@@ -23,7 +23,7 @@
                     android:layout_height="wrap_content"
                     android:background="#0000"
                     android:clickable="false"
-                    android:src="@drawable/pre" />
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -37,17 +37,15 @@
                 android:layout_height="425dp"
                 android:descendantFocusability="beforeDescendants"
                 android:gravity="center"
-                android:orientation="vertical"
-                android:weightSum="1">
+                android:orientation="vertical" >
 
 
                 <ImageView
                     android:layout_width="219dp"
-                    android:layout_height="253dp"
+                    android:layout_height="388dp"
                     android:src="@drawable/p01"
                     android:background="#0000"
-                    android:id="@+id/hero"
-                    android:layout_weight="0.18" />
+                    android:id="@+id/hero" />
 
                 <Button
                     android:text="确认"
@@ -73,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:background="#0000"
                     android:clickable="false"
-                    android:src="@drawable/next" />
+                    android:src="@drawable/forward" />
 
                 <TextView
                     android:layout_width="wrap_content"
