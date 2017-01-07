@@ -14,7 +14,7 @@
         android:textColor="#000000"
         android:textSize="30sp"
         android:id="@+id/selectText"
-        android:text="this is second tab !"
+        android:text="人物二 !"
         />
 
 

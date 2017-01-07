@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:id="@+id/leftChange"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/btn_leftC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="前一个"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/heros"
+                android:layout_width="189dp"
+                android:layout_height="425dp"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+
+                <ImageView
+                    android:layout_width="219dp"
+                    android:layout_height="388dp"
+                    android:src="@drawable/p01"
+                    android:background="#0000"
+                    android:id="@+id/hero" />
+
+                <Button
+                    android:text="确认"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_hero" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rightChange"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/btn_rightC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:src="@drawable/forward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下一个" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
