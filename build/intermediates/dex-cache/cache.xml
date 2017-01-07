@@ -3,30 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_e0a48c8ee4b9ba3ef1c53e533e7829baefb9f683/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Nina/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
         <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_482db0c970a00b4998267e4ac760e596357065ea/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a99185c903ad2624e7e1014f0b56014b8a0e9ebe">
-        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b44675c2fb473304742a47d625f4de4f2a93788c/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,12 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Nina/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta4/constraint-layout-solver-1.0.0-beta4.jar"
+        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="0a9cb567dc008f570c28531720168f19148da965">
-        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-beta4_36c1988a0a56d22879c9b28b802dee02930d3b4f/classes.dex" />
+        sha1="db24cacdc75f1fab7d94db52611fb3a3b35e3adb">
+        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b44675c2fb473304742a47d625f4de4f2a93788c/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -57,48 +39,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_2be28d1db090ee9baa1f8515754cff69583946aa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c125c9d53794c5fe36f6c4ee650804a2726fc7bd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
         <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_0c68b2382bb704d7a1176b782be63ba03c9230ff/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_de78f0e189aa5bf4dfaf153e6bae4902640fc827/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_5d8cb6204d81c84f566e780dd34019e49251cc5b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,6 +66,78 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_6c8fe78fbd3a537ad3fe776727680830a5dfc771/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8b06b819b9eff2a493532e4ebbf0726e0b0bf4f3">
+        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0a77c7c6576efe5fe32b42b9019e1e93b568cbe4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_e0a48c8ee4b9ba3ef1c53e533e7829baefb9f683/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nina/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta4/constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-beta4_36c1988a0a56d22879c9b28b802dee02930d3b4f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_2be28d1db090ee9baa1f8515754cff69583946aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c125c9d53794c5fe36f6c4ee650804a2726fc7bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_de78f0e189aa5bf4dfaf153e6bae4902640fc827/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_5d8cb6204d81c84f566e780dd34019e49251cc5b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -135,24 +153,6 @@
         revision="25.0.1"
         sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
         <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_21834113a1b6e5a25f5497864ba266c30c451f4c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_6c8fe78fbd3a537ad3fe776727680830a5dfc771/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b6790173b06d1cc0ffd66c6be7d3c55490f9079f">
-        <dex dex="/Users/Nina/Documents/ljl/hit Ball/HitBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0a77c7c6576efe5fe32b42b9019e1e93b568cbe4/classes.dex" />
     </item>
     <item
         is-multidex="true"

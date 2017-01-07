@@ -6,17 +6,18 @@
         android:id="@+id/prev_item"
         android:title="上一关"
         app:showAsAction="always"
-        android:icon="@drawable/back"/>
+        android:icon="@drawable/returnstep"/>
     <item
         android:id="@+id/next_item"
         android:title="下一关"
         app:showAsAction="always"
-        android:icon="@drawable/forward"/>
+        android:icon="@drawable/test1"
+        android:visible="true" />
     <item
         android:id="@+id/reset_item"
         app:showAsAction="always"
         android:title="重来"
-        android:icon="@drawable/refresh"/>
+        android:icon="@drawable/reset"/>
     <item
         android:id="@+id/about_item"
         android:title="关于"
