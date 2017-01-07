@@ -5,9 +5,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.nina.test.SokobanView android:id="@+id/sokoban" android:background="@drawable/bg"  android:layout_height="match_parent" android:layout_width="match_parent"/>
-
-
     <LinearLayout android:id="@+id/LLayoutTop" android:layout_width="fill_parent" android:layout_height="30dip" android:padding="5dip" >
 
     <TextView android:text="@string/tv_step" android:id="@+id/TVTop1" android:layout_width="wrap_content" android:layout_height="fill_parent"/>

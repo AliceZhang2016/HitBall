@@ -55,8 +55,8 @@ public class BackStage {
     public int numLake; //number of lakes
 
     public void MapGenerated(){
-        n = 8 + (int) (Math.random()*6); //column
         m = 8 + (int) (Math.random()*6); //line
+        n = 8 + (int) (Math.random()*6); //column
         map = new int[m][n];
         oldMap = new int[m][n];
         orgMap = new int[m][n];
@@ -140,19 +140,8 @@ public class BackStage {
             yRandom = 1 + (int) (Math.random()*(m-3));
             if(map[yRandom][xRandom] == -1)
             {
-                if(list[l] == B|| list[l] == H)
-                {
-                    if(yRandom != 0 && yRandom !=m-1 && xRandom != 0 && xRandom !=n-1 )
-                    {
-                        map[yRandom][xRandom] = list[l];
-                        l++;
-                    }
-                }
-                else
-                {
-                    map[yRandom][xRandom] = list[l];
-                    l++;
-                }
+                map[yRandom][xRandom] = list[l];
+                l++;
             }
         }
 
