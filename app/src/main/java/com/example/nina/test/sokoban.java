@@ -71,7 +71,7 @@ public class sokoban extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.prev_item:
-                Toast.makeText(this,"你点击了前一步",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"你点击了上一步",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.next_item:
                 Toast.makeText(this,"你点击了下一步",Toast.LENGTH_SHORT).show();
